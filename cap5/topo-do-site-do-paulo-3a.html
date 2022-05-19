@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Criação de sites com HTML e CSS | Paulo Silva</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<style type="text/css">
+			
+			html {
+				box-sizing: border-box;
+			}
+
+			*, *:before, *:after {
+				inherit;}
+
+			body {
+				font: 18px/1.4 arial, sans-serif;
+				background: #ddd;
+				color: #333;
+			}
+
+			.tudo {
+				width: 100%;
+				max-width: 960px;
+				margin: 0 auto;
+				background: #fff;
+			}
+
+			.topo {
+				width: 100%;
+			}
+
+			.topo h1 {
+				font-size: 36px;
+			}
+			.topo h2 {
+				font-size: 27px;
+			}
+
+		</style>
+	</head>
+	
+	<body class="home">
+
+		<div class="tudo">
+
+			<header class="topo">
+				<hgroup>
+					<h1><a href="">Site do Paulo</a></h1>
+					<h2>Site destinado a divulgar o trabalho de Paulo Silva na criação de sites</h2>
+				</hgroup>
+
+				<nav>
+					<ul>
+						<li><a class="corrente" href="home.html">home</a></li>
+						<li><a href="portfolio.html">portfólio</a></li>
+						<li><a href="artigos-html.html">artigos HTML</a></li>
+						<li><a href="artigos-css.html">artigos CSS</a></li>
+						<li><a href="contato.html">contato</a></li>
+						<div class="clear"></div><!--Limpa floats-->
+					</ul>
+				</nav>
+				
+			</header>
+
+			<!--Mais contéudo-->
+
+			<footer class="rodape">
+				<!-- contéudo do rodapé do site -->
+			</footer>
+		</div>
+	</body>
+</html>
