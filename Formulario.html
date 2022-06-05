@@ -8,38 +8,72 @@
 		<h2>Formulario Pessoal</h2>
 		<form action="" method="get">
 			<fieldset>
-				<label>Nome:
-					<input type="text" name="name"></label><br>
-				<label>Endereço:
-					<input type="text" name="adress"></label><br>
-				<label>Email:
-					<input type="text" name="email"></label><br>
-				<label>RG:
-					<input type="text" name="RG"></label><br>
-				<label>Sexo:
-					<input type="radio" name="sexo">Masculino
-					<input type="radio" name="sexo">Feminino</label><br>
-				<label>Estado:
-					<select name="estado">
-						<option value="PA">Pará</option>
-						<option value="MA">Maranhão</option>
-						<option value="TO">Tocantis</option>
-						<option value="PI">Piauí</option>
-						<option value="CE">Ceará</option>
-						<option value="AM">Amazonas</option>
-					</select></label><br>
-				<label>Informe a Data:
-					<input type="date" name="data"></label><br>
+				<fieldset>
+					<legend>Pessoal</legend>
+					<label>Nome:
+						<input type="text" name="name"></label><br>
+					<label>Endereço:
+						<input type="text" name="adress"></label><br>
+					<label>Email:
+						<input type="email" name="email"></label><br>
+					<label>RG:
+						<input type="text" name="RG"></label><br>
+					<label>Sexo:
+						<input type="radio" name="sexo">Masculino
+						<input type="radio" name="sexo">Feminino</label><br>
+					<label>Estado:
+						<select name="estado">
+							<option value="PA">Pará</option>
+							<option value="MA">Maranhão</option>
+							<option value="TO">Tocantis</option>
+							<option value="PI">Piauí</option>
+							<option value="CE">Ceará</option>
+							<option value="AM">Amazonas</option>
+						</select></label><br>
+					<label>Informe a Data:
+						<input type="date" name="data"></label><br>
+				</fieldset>
+			</form>
+			<h2>Formulario de Emprego</h2>
+			<fieldset>
+				<legend>Emprego</legend>
+				<label>Área de Atuação:
+					<input type="checkbox" name="área">TI
+					<input type="checkbox" name="área">Educação
+					<input type="checkbox" name="área">Finanças
+					<input type="checkbox" name="área">ONG</label><br>
+			</fieldset>
+			<hr>
+			<details>
+				<summary>Click Aqui</summary>
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Nome</th>
+						<th>Localização</th>
+						<th>Ocupação</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Alan</td>
+						<td>Imperatriz/MA</td>
+						<td>Web Developer</td>
+					</tr>
+				</table>
+			</details>
+			<hr>
+			<form>
+				<label for="fruta">Escolha uma fruta da lista</label>
+				<input list="frutas" name="fruta" id="fruta">
+				<datalist id="frutas">
+					<option value="Apple"></option>
+					<option value="Orange"></option>
+					<option value="Banana"></option>
+					<option value="Mango"></option>
+					<option value="Avacado"></option>
+				</datalist>
+				<input type="submit">
 			</fieldset>
 		</form>
-		<h2>Formulario de Emprego</h2>
-		<fieldset>
-			<label>Área de Atuação:
-				<input type="checkbox" name="área">TI
-				<input type="checkbox" name="área">Educação
-				<input type="checkbox" name="área">Finanças
-				<input type="checkbox" name="área">ONG</label><br>
-		</fieldset>
-
 	</body>
 </html>
