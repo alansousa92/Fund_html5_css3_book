@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .elemento-principal {
+                position: sticky;
+                /*left: 10px;
+                bottom: 10px;*/
+                top: 10px;
+                background-color: yellow;
+                padding: 10px;
+            }
+
+            /*
+            html {
+                height: 1000px;
+            }
+            */
+
+            .elemento-pai {
+                position: relative;
+                height: 800px;
+                padding: 50px 10px;
+                background-color: #81adc8;
+            }
+
+            .elemento-irmao {
+                padding: 10px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="elemento-pai">
+            <div class="elemento-irmao">
+                Eu sou o outro elemento irmão.
+            </div>
+
+            <div class="elemento-principal">
+                Todos os olhos em mim. Eu sou o elemento principal.
+            </div>
+
+            <div class="elemento-irmao">
+                Eu sou o outro elemento irmão.
+            </div>
+        </div>
+    </body>
+</html>

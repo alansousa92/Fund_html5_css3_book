@@ -1,0 +1,27 @@
+
+body {
+    /*border: 1px solid;*/
+    height: 800px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #af7ac5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav {
+    border: 1px solid;
+    background-color: #27ae60;
+    position: relative;
+}
+
+li {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f5b041;
+    position: absolute;
+}

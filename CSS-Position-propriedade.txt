@@ -1,0 +1,82 @@
+ que é a propriedade de posição CSS?
+ A propriedade position CSS define a posição de um elemento em um documento. 
+ Esta propriedade funciona com as propriedades left, right, top, bottom e z-index 
+ para determinar a posição final de um elemento em uma página.
+
+ Existem cinco valores que a propriedade position pode assumir. Eles são:
+
+ estático(static)
+ relativo(relative)
+ absoluto(absolute)
+ fixo(fixed)
+ pegajoso(sticky)
+
+ Estático
+ Este é o valor padrão para elementos. 
+ O elemento é posicionado de acordo com o fluxo normal do documento. 
+ As propriedades left, right, top, bottom e z-index não afetam um elemento com position: static.
+
+ Vamos usar um exemplo para mostrar essa posição: static não tem efeito na posição de um elemento. 
+ Temos três divs colocadas em um container pai. Usaremos este exemplo ao longo deste artigo.
+
+ Vamos adicionar position: static ao div com a classe main-element e left, top valores para ele. 
+ Também adicionamos alguns estilos às outras divs para diferenciá-las do elemento em foco.
+
+ Você notou que não há nenhuma mudança? 
+ Isso confirma o fato de que as propriedades left e bottom não afetam um elemento com position: static.
+
+ Relativo
+ Elementos com posição: relativa permanecem no fluxo normal do documento. 
+ Mas, ao contrário dos elementos estáticos, as propriedades left, right, top, bottom 
+ e z-index afetam a posição do elemento. 
+ Um deslocamento, baseado nos valores das propriedades esquerda, direita, superior e inferior, 
+ é aplicado ao elemento em relação a si mesmo.
+
+ Vamos substituir position: static por position: relative em nosso exemplo
+
+ Observe que as propriedades left e bottom agora afetam a posição do elemento. 
+ Observe também que o elemento permanece no fluxo normal do documento e o deslocamento 
+ é aplicado em relação a si mesmo. Tome nota disso enquanto passamos para outros valores.
+
+ Absoluto
+ Elementos com position: absolute são posicionados em relação aos seus elementos pai. 
+ Nesse caso, o elemento é removido do fluxo normal de documentos. 
+ Os outros elementos se comportarão como se esse elemento não estivesse no documento. 
+ Nenhum espaço é criado para o elemento no layout da página. 
+ Os valores de left, top, bottom e right determinam a posição final do elemento.
+
+ Uma coisa a notar é que um elemento com position: absolute é posicionado em relação 
+ ao seu ancestral posicionado mais próximo. 
+ Isso significa que o elemento pai deve ter um valor de posição diferente de position: static.
+
+ Se o elemento pai mais próximo não estiver posicionado, ele será posicionado em relação ao próximo 
+ elemento pai posicionado. 
+ Se não houver nenhum elemento ancestral posicionado, ele será posicionado em relação ao elemento <html>.
+
+ Vamos voltar ao nosso exemplo. Neste caso, alteramos a posição do elemento principal para position: absolute. 
+ Também daremos ao seu elemento pai uma posição relativa para que ele não seja posicionado em relação 
+ ao elemento <html>.
+
+ Observe que nenhum espaço foi criado no documento para o elemento. 
+ O elemento agora está posicionado em relação ao elemento pai. 
+ Tome nota disso enquanto passamos para o próximo valor.
+
+ Fixo
+ Elementos de posição fixa são semelhantes aos elementos de posição absoluta. 
+ Eles também são removidos do fluxo normal do documento. 
+ Mas ao contrário do elemento absolutamente posicionado, eles são sempre posicionados em relação ao elemento <html>.
+
+ Uma coisa a notar é que os elementos fixos não são afetados pela rolagem. Eles sempre ficam na mesma posição na tela.
+
+ Nesse caso, o elemento é posicionado em relação ao elemento <html>. Tente rolar para ver que o elemento fica fixo na tela.
+
+ Vamos para o valor final.
+
+ Sticky
+ position: sticky é uma mistura de position: relative e position: fixed. 
+ Ele age como um elemento relativamente posicionado até um certo ponto de rolagem e 
+ então age como um elemento fixo. 
+ Não tenha medo se você não entender o que isso significa, o exemplo o ajudará a entender melhor.
+
+ Role na guia de resultado para ver o resultado. Você vê que ele age como um elemento relativo até 
+ chegar a um certo ponto na tela, top: 10px e então ele chega lá como um elemento fixo.
