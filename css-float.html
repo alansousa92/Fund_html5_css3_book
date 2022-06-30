@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>
-
-        #pai {
-            border: 3px solid;
-            margin-bottom: 5px;
-            float: left;
-            width: 100%;
+    <style type="text/css">
+        
+        * {
+           margin: 0;
+           padding: 0;
+           font-size: 18px;
         }
-        .box {
+
+        h2 {
+           font-size: 2em;
+           border: 1px solid;
+           background-color: #ff5733;
+           margin: 10px;
+        }
+
+        h2 ~ p {
+           /* border: 1px solid;*/
+           margin: 10px;
+            
+        }
+
+        .aside {
+            float: right;
+            width: 400px;
             border: 1px solid;
-            width: 100px;
-            height: 100px;
+            padding: 0.25em;
+            margin: 0 1em 1em;
+            
+        }
+
+        img {
             float: left;
-            margin: 0 auto;
+            margin: 20px;
         }
 
-        #red {
-            background-color: red;
+       img:last-of-type {
+            float:right;
         }
-        #green {
-            background-color: green;
-        }
-        #blue {
-            background-color: blue;
-        }
-        #yellow {
-            background-color: yellow;
-        }
-
-        p {
-            clear:both;
-            border: 1px solid;
-            text-align: justify;
-        }
+                 
     </style>
+
 </head>
 <body>
-    <div id="pai">
-        <div id="red" class="box"></div>
-        <div  id="green" class="box"></div>
-        <div  id="blue" class="box"></div>
-        <div  id="yellow" class="box"></div>
-    </div>
+    <h2>Teste propriedade Float</h2>
+    
+    <img src="images/php1.png" width="100px">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -58,12 +62,20 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!--<p class="aside">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+<!--proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+    
+    <img src="images/vim-logo.png" alt="" width="90px" id="2"> 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nosLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+proident,trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
 </body>
 </html>
