@@ -1,0 +1,43 @@
+.container {
+    border: 1px solid;
+    width: 300px;
+    /*height: 280px;*/
+}
+
+.container > div:last-child {
+    border: none;
+    clear: left;
+}
+
+div { 
+    border: 2px dotted;
+}
+
+.container > div:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.um {
+    width: 100px; height: 50px;
+    float: left;
+}
+.dois {
+    width: 65px; height: 40px;
+    float: left;
+}
+.tres {
+    width: 50px; height: 45px;
+    float: left;
+}
+.quatro {
+    width: 115px; height: 60px;
+    float: left;
+}
+.cinco {
+    width: 45px; height: 20px;
+    float: left;
+}
+.seis {
+    width: 50px; height: 30px;
+    float: left;
+}

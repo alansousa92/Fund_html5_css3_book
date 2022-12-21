@@ -1,9 +1,0 @@
-Suporte a janela pop-up NeoVim api-floatwin e Vim8
-~ Abra e alterne a janela do terminal rapidamente
-~ Gerenciar várias instâncias de terminal
-~ Estilo de janela de terminal personalizável
-~ Mude/Visualize buffers de terminal flutuante usando plug-ins de busca difusa, como
-~ vim-clap, denite.nvim, coc.nvim, fzf.vim e LeaderF.
-~ Integrar com outras ferramentas externas de linha de comando (ranger, lf, fzf, etc.)
-~ Autocompletar de dentro de floaterms (requer coc.nvim)
-~ Use como um executor de tarefas personalizado para asynctasks.vim

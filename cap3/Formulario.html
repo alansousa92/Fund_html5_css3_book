@@ -8,32 +8,42 @@
 		<h2>Formulario Pessoal</h2>
 		<form action="" method="get">
 			<fieldset>
+				<legend>Formulario de Inscrição</legend>
 				<fieldset>
-					<legend>Pessoal</legend>
+					<legend>Dados Pessoais</legend>
 					<label>Nome:
-						<input type="text" name="name"></label><br>
+						<input type="text" name="name" required>
+					</label><br>
 					<label>Endereço:
-						<input type="text" name="adress"></label><br>
+						<input type="text" name="adress" required>
+					</label><br>
 					<label>Email:
-						<input type="email" name="email"></label><br>
+						<input type="email" name="email" required>
+					</label><br>
 					<label>RG:
-						<input type="text" name="RG"></label><br>
+						<input type="text" name="RG" required>
+					</label><br>
 					<label>Sexo:
 						<input type="radio" name="sexo">Masculino
-						<input type="radio" name="sexo">Feminino</label><br>
+						<input type="radio" name="sexo">Feminino
+					</label><br>
 					<label>Estado:
 						<select name="estado">
 							<option value="PA">Pará</option>
-							<option value="MA">Maranhão</option>
+							<option value="MA" checked>Maranhão</option>
 							<option value="TO">Tocantis</option>
 							<option value="PI">Piauí</option>
 							<option value="CE">Ceará</option>
 							<option value="AM">Amazonas</option>
 						</select></label><br>
 					<label>Informe a Data:
-						<input type="date" name="data"></label><br>
+						<input type="date" name="data">
+					</label><br>
 				</fieldset>
+			</fieldset>
 			</form>
+			<br/>
+			<button type="submit">Enviar</button>
 			<h2>Formulario de Emprego</h2>
 			<fieldset>
 				<legend>Emprego</legend>
